@@ -9,6 +9,7 @@ export default function GlobalError({error, retry,}: {
         <html>
             <body>
                 <h2>Something went wrong!</h2>
+                <p>{error.message}</p>
                 <button onClick={() => retry()}>Try again</button>
             </body>
         </html>
